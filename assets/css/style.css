@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Spectral:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  /*font-family: "Spectral", serif;*/
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Spectral", serif;
+}
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+h3 {
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+article {
+  margin-top: 40px;
+  display: flex;
+  font-size: large;
+}
+aside {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: solid 1px #eae6e6;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 85%;
+  background: #ffc017;
+  border-bottom: solid 1px;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  /*animation: changeColor 5s linear;*/
+}
+
+/*@keyframes changeColor {
+  from {
+    background-color: #ffc017;
+  }
+  to {
+    background-color: white;
+  }
+}*/
+.navBar,
+aside,
+article {
+  padding-inline: 10%;
+  padding-left: 100px;
+}
+.left {
+  margin-right: auto;
+}
+.aNavbar {
+  padding: 20px;
+  margin-block: 10px;
+  text-decoration: none;
+}
+.buttonNavBar {
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.802);
+  color: white;
+}
+.buttonNavBar:hover {
+  background-color: black;
+  scale: 1.1;
+}
+.mainImg {
+  margin-top: 77px;
+  border-bottom: solid 1px;
+  display: flex;
+  background-color: #ffc017;
+}
+.containerH1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  gap: 50px;
+  padding-left: 100px;
+}
+.containerH1 p {
+  font-size: 1.5rem;
+}
+.containerH1 button {
+  width: 25%;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+}
+.containerH1 a {
+  text-decoration: none;
+  color: white;
+  font-size: medium;
+}
+.TrMedium {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  gap: 30px 0px;
+  width: 110%;
+  font-size: large;
+}
+.noDecoration {
+  text-decoration: none;
+  color: black;
+}
+.ContainTrending {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 50px;
+  gap: 7px;
+  width: 250px;
+}
+.opacitySpan {
+  opacity: 0.5;
+}
+.textMiddleSpan {
+  font-weight: bold;
+}
+.number {
+  float: left;
+  font-size: xx-large;
+  opacity: 0.2;
+}
+.discover {
+  display: flex;
+  flex-direction: column;
+}
+.news {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  margin-bottom: 50px;
+}
+.allSpan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.spanArticle {
+  font-weight: bold;
+}
+.linkArticle {
+  background-color: rgb(217, 217, 217);
+  border: solid 1px;
+  border-color: rgb(190, 190, 190);
+  border-radius: 25px;
+  color: rgb(0, 0, 0);
+  padding: 7px;
+  text-decoration: none;
+}
+.imgSpanAside {
+  padding-inline: 5px;
+  border-radius: 50%;
+  height: 23px;
+  width: auto;
+}
+.containerNews {
+  display: flex;
+  margin-bottom: 40px;
+}
+.imgNews {
+  width: 200px;
+  height: 134px;
+}
+.divImg {
+  margin-left: auto;
+}
+.discover {
+  margin-inline: 40px;
+  width: 550px;
+}
+.discoverList {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #e4e4e4;
+  padding-bottom: 30px;
+}
+.discoverList button {
+  background-color: white;
+  border: solid 1px;
+  border-color: rgb(190, 190, 190);
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  height: 35px;
+  margin: 5px;
+}
+.discoverList a {
+  text-decoration: none;
+  color: grey;
+}
+.aLink {
+  margin: 30px;
+}
+.aLink a {
+  text-decoration: none;
+  padding: 20px;
+  color: #6b6b6b;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+  header .navBar {
+    min-width: 100%;
+  }
+  .buttonNavBar {
+    margin-right: 15%;
+    h1 {
+      font-size: 4rem;
+    }
+    article {
+      flex-wrap: wrap;
+    }
+    .discover {
+      order: 1;
+      margin-inline: 0;
+    }
+    .news {
+      order: 2;
+    }
+    .navBar,
+    aside,
+    article {
+      padding-inline: 0px;
+      padding-left: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  header .navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: 100%;
+  }
+  header .navBar .aNavbar:nth-child(n + 2):nth-child(-n + 4) {
+    display: none;
+  }
+  h1 {
+    font-size: 5rem;
+    margin-top: 50px;
+  }
+  svg {
+    display: none;
+  }
+  .buttonNavBar {
+    margin-right: 10%;
+  }
+  .mainImg button {
+    width: 200px;
+    margin-bottom: 50px;
+    padding-inline: 0;
+    padding-left: 0px;
+  }
+  .navBar,
+  aside,
+  article {
+    padding-inline: 0px;
+    padding-left: 20px;
+  }
+  .containerH1 {
+    padding-left: 20px;
+  }
+  .TrMedium {
+    justify-content: start;
+  }
+  article {
+    flex-wrap: wrap;
+  }
+  .discover {
+    order: 1;
+    margin-inline: 0;
+  }
+  .news {
+    order: 2;
+  }
+  .aLink {
+    margin: 0px;
+    margin-block: 20px;
+  }
+}
