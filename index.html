@@ -8301,5 +8301,18 @@
         </div>
       </div>
     </article>
+    <script>
+      let scrollScript = document.querySelector(".navBar");
+      let buttonScript = document.querySelector(".buttonNavBar");
+      window.addEventListener("scroll", function () {
+        if (this.scrollY > 480) {
+          scrollScript.classList.add("navbar-white");
+          buttonScript.classList.add("green");
+        } else {
+          scrollScript.classList.remove("navbar-white");
+          buttonScript.classList.remove("green");
+        }
+      });
+    </script>
   </body>
 </html>

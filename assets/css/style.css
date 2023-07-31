@@ -12,6 +12,7 @@ h5 {
   font-family: "Spectral", serif;
 }
 h1 {
+  white-space: nowrap;
   letter-spacing: -0.05em;
   line-height: 95px;
   font-size: 106px;
@@ -23,6 +24,14 @@ h3 {
 }
 h4 {
   font-size: 1.5rem;
+  font-weight: bold;
+}
+h5 {
+  letter-spacing: 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: #242424;
+  line-height: 20px;
   font-weight: bold;
 }
 article {
@@ -215,6 +224,14 @@ article {
   text-decoration: none;
   padding: 20px;
   color: #6b6b6b;
+}
+
+.navbar-white {
+  background-color: white;
+  /* Altri stili per il colore bianco della navbar */
+}
+.green {
+  background-color: green;
 }
 
 @media screen and (min-width: 601px) and (max-width: 1000px) {
